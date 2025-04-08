@@ -19,3 +19,6 @@ button.addEventListener("click", function () {
     cookieCount = cookieCount + 1;
     totalPokemon.textContent = `Total Pokemon: ${cookieCount}`;
 });
+//render pokemon per second
+const currentpps = document.getElementById("current-pps")
+currentpps.textContent = `Pokemon Per Second: ${cookiesPerSecond}`;
