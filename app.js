@@ -12,3 +12,10 @@ console.log(cookieCount);
 
 // render the change on screen
 const totalPokemon = document.getElementById("totalpokemon")
+
+// button click increment +1
+const button = document.getElementById("cookie-increment-button")
+button.addEventListener("click", function () {
+    cookieCount = cookieCount + 1;
+    totalPokemon.textContent = `Total Pokemon: ${cookieCount}`;
+});
